@@ -63,11 +63,12 @@ This will generate a response based on these inputs and display it in the Assist
 The Refresh Token Count button updates the token count based on the inputs provided in the System, User, and Assistant Guide fields.
 
 ## Models
-Tested with the following models:
+Tested with the following GGML models:
 * Wizard-Vicuna-30B-Uncensored
-* llama-30b
-* guanaco-33B
+* Llama-30b
+* Guanaco-33B
 * Alpaca-Lora-30B
+* Lazarus-30B
 
 ## Run
 The Run button generates a response based on the provided inputs in the System, User, and Assistant Guide fields.  
