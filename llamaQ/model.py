@@ -7,3 +7,4 @@ class Model:
     n_ctx:int
     n_threads:int
     n_gpu_layers:int
+    prompt_format:str

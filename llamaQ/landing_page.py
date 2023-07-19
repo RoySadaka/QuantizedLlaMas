@@ -21,7 +21,7 @@ def get_all_elements():
     return gr_elements
 
 def run_llama_handler(system, user, assistant_guide, temperature, max_tokens, stop_sequence):
-    result = lo.call_llm(config=app.metadata.config, llm_model=app.llm, system=system, user=user, assistant_guide=assistant_guide, temperature=temperature, max_tokens=max_tokens, stop_sequence=stop_sequence)
+    result = lo.call_llm(metadata=app.metadata, llm_model=app.llm, system=system, user=user, assistant_guide=assistant_guide, temperature=temperature, max_tokens=max_tokens, stop_sequence=stop_sequence)
     app.metadata.conversation = [system,user,assistant_guide+result]
     return get_all_elements()
 

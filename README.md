@@ -64,6 +64,8 @@ The Refresh Token Count button updates the token count based on the inputs provi
 
 ## Models
 Tested with the following GGML models:
+* Llama-2-13b
+* Llama-2-13b-chat
 * Wizard-Vicuna-30B-Uncensored
 * Llama-30b
 * Guanaco-33B
