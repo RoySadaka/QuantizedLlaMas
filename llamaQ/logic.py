@@ -7,7 +7,7 @@ def get_available_models(config: Config):
     return list(config.model_name_to_model.keys())
 
 def load_model(model: Model) -> Llama:
-    return Llama(model_path=model.path, n_ctx=model.n_ctx, n_threads=model.n_threads, n_gpu_layers=model.n_gpu_layers, verbose=False)
+    return Llama(model_path=model.path, n_ctx=model.n_ctx, n_gqa=model.n_gqa, n_threads=model.n_threads, n_gpu_layers=model.n_gpu_layers, verbose=False)
 
 def unload_model(llama: Llama):
     llama_free(llama.ctx)
